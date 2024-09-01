@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Input, Dropdown, Image } from 'semantic-ui-react';
 
 export default function DashboardNavBar() {
@@ -11,15 +12,15 @@ export default function DashboardNavBar() {
     );
 
     const options = [
-        { key: 'profile', text: 'Profil', icon: 'user' },
+        { key: 'profile', text: <Link to='/app/profile'>Profil</Link>, icon: 'user' },
         { key: 'settings', text: 'Paramètres', icon: 'settings' },
-        { key: 'logout', text: 'Déconnexion', icon: 'sign-out' },
+        { key: 'logout', text: <Link to='/auth/connexion'>Déconnexion</Link>, icon: 'sign-out' },
     ];
 
     return (
-        <nav className="bg-gray-800 p-4 flex items-center justify-between">
+        <nav className="fixed top-0 w-full z-40 bg-white border-b px-10 p-4 flex items-center justify-between">
             {/* Left: Application Name */}
-            <div className="text-white text-2xl font-bold">
+            <div className="text-primary text-2xl font-bold">
                 BReady
             </div>
 
