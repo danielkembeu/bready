@@ -32,7 +32,7 @@ export default function FinalAuthPage() {
                         />
                     </FormField>
 
-                    <FormField>
+                    {/* <FormField>
                         <label className='text-secondary'>Unité d'enseignements</label>
                         <Select
                             search
@@ -41,7 +41,7 @@ export default function FinalAuthPage() {
                             defaultValue=''
                             placeholder='Ex: Algèbre linéaire, Base de données...'
                         />
-                    </FormField>
+                    </FormField> */}
 
 
                     <Divider />
